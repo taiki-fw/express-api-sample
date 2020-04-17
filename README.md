@@ -5,11 +5,11 @@
 app
 - app.js
 - routes
- - v1
-  - index.js
-  - user.js
-  - article.js
-  - xxx.js
+  - v1
+    - index.js
+    - user.js
+    - article.js
+    - xxx.js
   
  ## code 
  
