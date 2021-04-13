@@ -2,6 +2,9 @@
   "name": "json-api",
   "version": "1.0.0",
   "license": "MIT",
+  "scripts": {
+    "start": "node ./src/app.js"
+  },
   "dependencies": {
     "express": "^4.17.1"
   }
