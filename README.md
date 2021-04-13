@@ -1,8 +1,17 @@
-# How to separate endpoints
+## COMMAND
 
-## file level
+### Start API Server
+
+```zsh
+docker-compose up -d
+```
+
+## How to separate endpoints
+
+### file level
 
 app
+
 - app.js
 - routes
   - v1
@@ -10,10 +19,10 @@ app
     - user.js
     - article.js
     - xxx.js
-  
- ## code 
- 
- **`"~":"xxx/app/"`**
+
+### code
+
+**`"~":"xxx/app/"`**
 
 ```javascript
 // ~/app.js ... root file
@@ -38,13 +47,11 @@ module.exports = router;
 const router = express.Router();
 
 // ~/api/v1/user/
-router.get("/", function(req, res) {
-
+router.get("/", function (req, res) {
   // response
   res.json({
-    message: "Hello, user api."
+    message: "Hello, user api.",
   });
-
 });
 
 module.exports = router;
