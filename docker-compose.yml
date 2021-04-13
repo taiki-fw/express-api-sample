@@ -1,0 +1,13 @@
+version: "3.9" # optional since v1.27.0
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile-node
+    volumes:
+      - type: bind
+        source: "./src"
+        target: "/app/src"
+    ports:
+      - "3000:3000"
+    command: npm start
